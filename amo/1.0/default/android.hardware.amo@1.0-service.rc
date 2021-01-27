@@ -1,0 +1,4 @@
+service amo_hal_service /vendor/bin/hw/android.hardware.amo@1.0-service
+    class hal
+    user  system
+    group  system

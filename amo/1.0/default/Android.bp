@@ -1,0 +1,17 @@
+cc_library {
+    name: "android.hardware.amo@1.0-impl",
+    relative_install_path: "hw",
+    proprietary: true,
+	init_rc: ["android.hardware.amo@1.0-service.rc"],
+    srcs: [
+        "Amo.cpp",
+		"service.cpp"
+    ],
+    shared_libs: [
+        "libhidlbase",
+        "libhidltransport",
+        "libutils",
+		"liblog",
+        "android.hardware.amo@1.0",
+    ],
+}

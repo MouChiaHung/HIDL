@@ -1,0 +1,7 @@
+package android.hardware.amo@1.0;
+
+interface IAmo {
+    init(int32_t level) generates (int32_t initRet);
+	
+    getProperty(string key) generates (int32_t getResult, string value);
+};
